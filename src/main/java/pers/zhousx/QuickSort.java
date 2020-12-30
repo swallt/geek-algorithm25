@@ -56,7 +56,7 @@ public class QuickSort {
      * @param start
      * @param end
      */
-    private static void quickSort_hg(int[] arr, int start, int end) {
+    public static void quickSort_hg(int[] arr, int start, int end) {
         if (start >= end) {
             return;
         }
@@ -80,7 +80,7 @@ public class QuickSort {
         quickSort_hg(arr, x + 1, end);
     }
 
-    private static void quickSort(int[] arr, int start, int end) {
+    public static void quickSort(int[] arr, int start, int end) {
         int partion = getPartition(arr, start, end);
         if (partion - start > 1) {
             quickSort(arr, start, partion - 1);
